@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: url(images/bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+/*.wallpaper{
+    width: 100%;
+    overflow: hidden;
+}*/
+
+img { 
+    -webkit-user-drag: none; 
+    -khtml-user-drag: none; 
+    -moz-user-drag: none; 
+    -o-user-drag: none; 
+}
+
+.taskbar{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.726);
+    position: absolute;
+    bottom: 0;
+    backdrop-filter: blur(15px);
+    cursor: context-menu;
+    z-index: 110;
+}
+
+.windowslogo{
+    margin-left: 580px;
+    margin-top: 4px;
+    height:22px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.windowslogo:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.windowslogo:active{
+    height: 16px;
+    padding: 8px;
+}
+
+.taskbaricons{
+    margin-left: 5px;
+    margin-top: 4px;
+    height:22px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.taskbaricons:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.taskbariconsright{
+    margin-left: 5px;
+    margin-top: 4px;
+    height:22px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.taskbariconsright:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.taskbarright{
+    margin-left: 320px;
+    margin-bottom: 4px;
+    height: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+}
+
+.taskbarright:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.taskbarsound{
+    margin-left: 5px;
+    margin-top: 4px;
+    height: 30px;
+    padding: 1px;
+    border-radius: 4px;
+}
+
+.taskbarsound:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+#clock {
+    height: 30px;
+    width: 60px;
+    margin-left: 2px;
+    color: black;
+    font-size: 11px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 2px;
+    position: absolute;
+    border-radius: 4px;
+    padding: 3px;
+    padding-right: 0;
+    cursor: context-menu;
+}
+
+#clock:hover{
+    background-color: white;
+}
+
+/*.notify{
+    background-color: black;
+    margin-left: 5px;
+    margin-top: 4px;
+    height: 30px;
+    width: 20px;
+    border-radius: 4px;
+}*/
+
+.vl {
+    border-left: 6px solid rgb(0, 0, 0);
+    height: 40px;
+    position: absolute;
+  }
+
+.notify{
+    margin-left: 70px;
+    margin-top: 6px;
+    height:19px;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.notify:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.desktopicons{
+    height: 65px;
+    margin: 10px;
+    padding: 6px;
+    padding-bottom: 26px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.desktopicons:hover{
+    background-color: rgba(107, 124, 180, 0.24);
+}
+
+.icontext{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 24px;
+    cursor: context-menu;
+    z-index: -1;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 0px 2px white;
+    font-size: 15px;
+}
+
+.icontext2{
+    position: absolute;
+    margin-top: -36px;
+    margin-left: 123px;
+    cursor: context-menu;
+    z-index: -1;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 0px 2px white;
+}
+
+.aeropeek{
+    height: 40px;
+    position: absolute;
+    margin-right: 0;
+    margin-left: 110px;
+}
+
+.startmenu{
+    height: 550px;
+    width: 600px;
+    background-color: rgba(241, 241, 241, 0.726);
+    /* margin-top: -576px; */
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(18px);
+    transition: all 0.3s ease-in;
+    position: relative;
+}
+
+.ppt{
+    height:110px;
+    width: 138.5px;
+    background-color: rgba(253, 253, 253, 0.568);
+    position: absolute;
+    margin: 7.5px;
+    border-radius: 7px;
+    margin-left: 8px;
+}
+
+.ppt:hover{
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.ppticon{
+    display: block;
+    margin: auto;
+    margin-top: -5px;
+}
+
+.ppt p{
+    text-align: center;
+    bottom: 10px;
+    cursor: context-menu;
+    position: relative;
+}
+
+.word{
+    height:110px;
+    width: 138.5px;
+    background-color: rgba(253, 253, 253, 0.568);
+    position: absolute;
+    margin: 7.5px;
+    border-radius: 7px;
+    margin-left: 156px;
+}
+
+.word:hover{
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.wordicon{
+    display: block;
+    margin: auto;
+    margin-top: -5px;
+}
+
+.word p{
+    text-align: center;
+    bottom: 10px;
+    cursor: context-menu;
+    position: relative;
+}
+
+.onenote{
+    height:110px;
+    width: 138.5px;
+    background-color: rgba(253, 253, 253, 0.568);
+    position: absolute;
+    margin: 7.5px;
+    border-radius: 7px;
+    margin-left: 303px;
+}
+
+.onenote:hover{
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.onenoteicon{
+    display: block;
+    margin: auto;
+    margin-top: -5px;
+}
+
+.onenote p{
+    text-align: center;
+    bottom: 10px;
+    cursor: context-menu;
+    position: relative;
+}
+
+.teams{
+    height:110px;
+    width: 138.5px;
+    background-color: rgba(253, 253, 253, 0.568);
+    position: absolute;
+    margin: 7.5px;
+    border-radius: 7px;
+    margin-left: 451px;
+}
+
+.teams:hover{
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.teamsicon{
+    display: block;
+    margin: auto;
+    margin-top: -5px;
+}
+
+.teams p{
+    text-align: center;
+    bottom: 10px;
+    cursor: context-menu;
+    position: relative;
+}
+
+.fa-search{
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 58px;
+}
+
+.input-field{
+    height: 30px;
+    width: 500px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-indent: 30px;
+    margin-top: 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.input-field:focus{
+    border-bottom: 3px solid rgb(38, 38, 199);
+}
+
+#allapps{
+    width: 70px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 3px;
+    border: 0.5px solid rgb(180, 180, 180);
+    float: right;
+    margin-left: 520px;
+    position: absolute;
+    margin-top: -15px;
+    margin-bottom: -5px;
+    background-color: rgb(243, 243, 243);
+}
+
+#allapps:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+.fa fa-chevron-right{
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.context-menu {
+    position: absolute;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.849);
+    text-indent: 10px;
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+}
+
+.context-menu ul {
+    padding: 0px;
+    margin: 0px;
+    min-width: 200px;
+    list-style: none;
+}
+
+.context-menu ul li {
+    padding-bottom: 5px;
+    padding-top: 4px;
+    border-radius: 5px;
+}
+
+.context-menu ul li a {
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    cursor: context-menu;
+    font-size: 15px;
+}
+
+.context-menu ul li:hover {
+    background: rgba(0, 0, 0, 0.103)
+}
+
+.pinned{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    font-weight: 400;
+}
+
+#excel{
+    width: 284px;
+    background-color: rgba(245, 245, 245, 0);
+    margin-left: 9px;
+    margin-top: 15px;
+    height: 50px;
+    border-radius: 7px;
+    position: relative;
+}
+
+#excel:hover{
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.usersm{
+    position: relative;
+    width: 45px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.user2{
+    background-color: rgba(253, 253, 253, 0.568);
+}
+
+.power:hover{
+    background-color: beige;
+    border-radius: 5px;
+    
+}
+
+.image-fader{
+    position: absolute;
+    background-color: rgba(253, 253, 253, 0.363);
+    width: 290px;
+    height: 273px;
+    top: 196px;
+    right: 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+.image-fader img {
+    margin-left: 55px;
+    height: 90%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: imagefade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+  }
+  
+  @keyframes imagefade {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  .image-fader img:nth-of-type(1) {
+    animation-delay: 6s;
+  }
+  .image-fader img:nth-of-type(2) {
+    animation-delay: 4s;
+  }
+  .image-fader img:nth-of-type(3) {
+    animation-delay: 2s;
+  }
+  .image-fader img:nth-of-type(4) {
+    animation-delay: 0;
+  }
+
+
+#searchbox{
+    height: 550px;
+    width: 600px;
+    background-color: rgba(241, 241, 241, 0.726);
+    /* margin-top: 30px; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(18px);
+    z-index: 10;
+}

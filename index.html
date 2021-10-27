@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11 (New Edition)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="noselect">
+    <script src="script.js"></script>
+    <!--<img src="images/wallpaperflare.com_wallpaper.jpg" class="wallpaper">-->
+    <div class="taskbar">
+        <img src="images/logo1.png" id="windowslogo" class="windowslogo" onclick="clickLogo()">
+        <img src="images/search.png" id="search" class="taskbaricons">
+        <img src="images/task view.png" id="taskview" class="taskbaricons">
+        <img src="images/widget.png" id="widget" class="taskbaricons">
+        <img src="images/chat.png" id="teamschat" class="taskbaricons">
+        <img src="images/File Explorer.png" id="fileexplorer" class="taskbaricons">
+        <img src="images/Settings.png" id="settings" class="taskbaricons">
+        <img src="images/microsoft edge.png" id="edge" class="taskbaricons">
+        <img src="images/Microsoft Store.png" id="store" class="taskbaricons">
+        <img src="images/uparrow.png" id="uparrow" class="taskbarright">
+        <img src="images/wifi.png" id="wifi" class="taskbariconsright">
+        <img src="images/battery.png" id="battery" class="taskbariconsright">
+        <img src="images/sound.png" id="sound" class="taskbarsound">
+        <span id="clock" ></span>
+        <img src="images/notify.png" id="notify" class="notify">
+        <img src="images/blank.png" id="aeropeek" class="aeropeek">
+    </div>
+    
+    <!--Desktop Icons-->
+
+    <div id="contextMenu" class="context-menu" 
+    style="display: none">
+    <ul>
+        <li><a href="#">View</a></li>
+        <li><a href="#">Sort by</a></li>
+        <li><a href="#">Refresh</a></li>
+        <hr style="border: 1px solid rgb(184, 184, 184); border-bottom: none;">
+        <li><a href="#">Next desktop background</a></li>
+        <li><a href="#">Undo delete &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 10px;">Ctrl+Z</span></a></li>
+        <li><a href="#">New Item</a></li>
+        <hr style="border: 1px solid rgb(184, 184, 184); border-bottom: none;">
+        <li><a href="#">Display Settings</a></li>
+        <li><a href="#">Personalize</a></li>
+        <hr style="border: 1px solid rgb(184, 184, 184); border-bottom: none;">
+        <li><a href="#">Open in WIndows Terminal</a></li>
+        <li><a href="#">Open in WIndows Terminal</a></li>
+        <hr style="border: 1px solid rgb(184, 184, 184); border-bottom: none;">
+        <li><a href="#">Show more options</a></li>
+    </ul>
+</div>
+
+    <div>
+        <p class="icontext" style="margin-left:23px">This PC</p>
+        <img src="images/Computer.png" class="desktopicons" id="thispc">
+        <p class="icontext2" style="margin-left:115px">VS Code</p>
+        <img src="images/VS code.png" class="desktopicons" id="vscode" style="height: 60px;">  
+    </div>
+    <div>
+        <p class="icontext" style="margin-left:12px">Recycle Bin</p>
+        <img src="images/Trash Empty.png" id="recyclebin" class="desktopicons">
+        <p class="icontext2" style="margin-left:123px; text-align: center; margin-top: -45px;">Visual<br>Studio</p>
+        <img src="images/Visual Studio.png" id="vs" class="desktopicons" style="padding-bottom: 40px; position: absolute;">
+    </div>
+    <div>
+        <p class="icontext">Settings</p>
+        <img src="images/Settings.png" id="settings" class="desktopicons">
+        <p class="icontext2" style="margin-left:130px;">Paint</p>
+        <img src="images/paint.png" id="paint" class="desktopicons">
+    </div>
+    <div>
+        <p class="icontext" style="margin-left:30px">Edge</p>
+        <img src="images/microsoft edge.png"  id="edge" class="desktopicons">
+    </div>
+    <div>
+        <p class="icontext" style="margin-left:9.5px">File Explorer</p>
+        <img src="images/File Explorer.png"  id="fileexplorer" height="-10px" class="desktopicons">
+    </div>
+    <div>
+        <p class="icontext">Chrome</p>
+        <img src="images/chrome.png" id="chrome" class="desktopicons">
+    </div>
+
+<!-- Desktop apps end -->
+
+<!-- Startmenu begins -->
+
+    <div class="startmenu">
+        <i class="fa fa-search"></i>
+        <input type="text" name="search" id="search" placeholder="Type here to search" class="input-field">
+
+        <p class="pinned">Pinned</p>
+        <button id="allapps">All apps &nbsp;&nbsp;<i class="fa fa-chevron-right"></i></button>
+
+        <div style="margin-top: 3px;">
+        <div class="ppt">
+            <img src="images\PowerPoint_96x96.png" class="ppticon">
+            <p>PowerPoint</p>
+        </div>
+        <div class="word">
+            <img src="images\Word_96x96.png" class="wordicon">
+            <p>Word</p>
+        </div>
+        <div class="onenote">
+            <img src="images\OneNote_96x96.png" class="onenoteicon">
+            <p>OneNote</p>
+        </div>
+        <div class="teams">
+            <img src="images\Microsoft Teams_96x96.png" class="teamsicon">
+            <p>Microsoft Teams</p>
+        </div>  
+
+        <!-- Movie and book-->
+        <div class="image-fader">
+            <img src="images/movie.png" />
+            <img src="images/movie2.jpg" />
+            <img src="images/book.png" />
+            <img src="images/book2.jpg" />
+            <p style="position: relative; top: 247px; text-align: center; font-weight: 500;">Recommended Books and Movies</p>
+        </div>
+
+
+    <!--other apps-->
+    <section style="margin-top: 110px;">
+
+        <p class="pinned" style="margin-top: 15px;">Recent</p>
+
+        
+
+        <div id="excel">
+            <img src="images/Excel_96x96.png" style="height: 70px; margin-top: -10px; " >
+            <p style="margin-top: -50px; margin-left: 65px; cursor:context-menu;">Microsoft Excel</p>
+        </div>
+
+        <hr style="border-top: none; margin-top: 5px; margin-bottom: -10px; border-bottom: 1.5px solid rgb(110, 110, 110); width: 45%; margin-left: 15px;">
+        
+        <div id="excel">
+            <img src="images/Settings.png" style="height: 40px; margin-top: 2.5px; margin-left: 15px;" >
+            <p style="margin-top: -38px; margin-left: 65px; cursor:context-menu;">Settings</p>
+        </div>
+
+        <hr style="border-top: none; margin-top: 5px; margin-bottom: -10px; border-bottom: 1.5px solid rgb(110, 110, 110); width: 45%; margin-left: 15px;">
+
+        <div id="excel">
+            <img src="images/Camera.png" style="height: 40px; margin-top: 2.5px; margin-left: 15px;" >
+            <p style="margin-top: -38px; margin-left: 65px; cursor:context-menu;">Camera</p>
+        </div>
+
+        <hr style="border-top: none; margin-top: 5px; margin-bottom: -10px; border-bottom: 1.5px solid rgb(110, 110, 110); width: 45%; margin-left: 15px;">
+
+        <div id="excel">
+            <img src="images/Control Panel.png" style="height: 40px; margin-top: 2.5px; margin-left: 15px;" >
+            <p style="margin-top: -38px; margin-left: 65px; cursor:context-menu;">Control Panel</p>
+        </div>
+
+        <br>
+        
+        
+
+    </section>
+        <div style="width: 563px; margin-left: 12px; padding: 7px;padding-bottom: 10px; margin-bottom: 100px; height: 40px; border-radius: 7px;" class="user2">
+            <img src="images/power.png" style="position: absolute; height: 20px; display: block; margin-top: 8px; margin-left: 520px; padding: 5px;" class="power"> 
+            <p id="username" style="position: absolute; margin-left: 70px; margin-top: 10px; cursor: context-menu;">Aryav Gulla</p>
+            <img src="images/user.png" class="usersm">
+        </div>
+</div>
+</div>
+</div>
+<!-- Startmenu ends -->
+
+<!-- Searchmenu starts -->
+
+<!-- Searchmenu ends -->
+
+</body>
+<script>
+    var clockElement = document.getElementById('clock');
+    
+    function clock() {
+        var date = new Date();
+            // While this format will be used for larger windows.
+            clockElement.textContent = date.toString();
+    }
+
+       window.setInterval(function(){clock()},1000)
+        var dateDiv = document.getElementById('clock');
+        
+        
+        function myDateFunction() {
+            var now = new Date();
+            var nowStr = now.toLocaleString('en-GB');
+            nowStr.replace(",","abc");
+            dateDiv.innerHTML = nowStr;
+        }
+        setInterval(myDateFunction, 1000);
+
+        document.onclick = hideMenu;
+    document.oncontextmenu = rightClick;
+      
+    function hideMenu() {
+        document.getElementById("contextMenu")
+                .style.display = "none"
+    }
+  
+    function rightClick(e) {
+        e.preventDefault();
+  
+        if (document.getElementById("contextMenu")
+                .style.display == "block")
+            hideMenu();
+        else{
+            var menu = document.getElementById("contextMenu")
+  
+            menu.style.display = 'block';
+            menu.style.left = e.pageX + "px";
+            menu.style.top = e.pageY + "px";
+        }
+    }
+</script>
+
+</html>
